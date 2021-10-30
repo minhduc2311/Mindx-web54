@@ -5,7 +5,7 @@
 }
 
 #container {
-  width: 700px;
+  width: 600px;
   margin: auto;
 }
 
@@ -17,62 +17,85 @@
 }
 
 h2 {
-    text-align: center;
-
+  text-align: center;
 }
 
-
 #input-form {
-    width: 70%;
+  width: 70%;
   display: flex;
-justify-content: space-around;
-    margin: 30px auto;
+  justify-content: space-around;
+  margin: 30px auto;
+
 }
 
 #main-input {
-    width: 70%;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #cccccc;
-    padding-left: 20px;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
 }
 
-
 #submit-btn {
-    width: 70px;
-    border: 1px solid #cccccc;
-    background-color: yellow;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
+  width: 70px;
+  border: none;
+  background-color: #008CBA;;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  
 }
 
 ul li {
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    height: 50px;
-    font-size: 18px;
-    padding: 15px 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    display: flex;
+  text-decoration: none;
+  position: relative;
+  height: 50px;
+  font-size: 18px;
+  padding: 15px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
+ul li.checked {
+  text-decoration: line-through;
+  color: #cccccc;
+}
+
+
 .delete-btn {
-    background-color: red;
-    padding-top: 3px;
-    text-align: center;
-    width: 70px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    position: absolute;
+  cursor: pointer;
+  background-color: #f44336;;
+  padding-top: 3px;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
   right: 10px;
   top: 10px;
   color: #ffffff;
+}
+
+.done-btn {
+  cursor: pointer;
+  background-color: #4CAF50;
+  padding-top: 3px;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 90px;
 }
